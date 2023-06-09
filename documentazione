@@ -14,13 +14,14 @@ comando versione:
 da cmd  npm --version
 da cmd  ng version
 
+------------------------------------------------------------------
 creazione prima applicazione:
 
 ng new --nome progetto--
 --routing yes
 --css
 
-
+------------------------------------------------------------------
 buildare il progetto:
 
 entrare nel progetto
@@ -30,3 +31,19 @@ entrare nel progetto
 avviare il progetto:
 
 --ng serve
+
+------------------------------------------------------------------
+struttura applicazione
+
+angular.json permette le operazioni di build serve ecc
+
+------------------------------------------------------------------
+creazione di un component
+
+ng generate component  --nome component--  --standalone --inline-template --skip-tests
+
+oppure
+
+ng g c --nome component--
+
+e aggiungere l'import su app.module.ts
