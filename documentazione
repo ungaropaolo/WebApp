@@ -1,0 +1,32 @@
+installazione di node:
+
+Latest LTS Version 18.16.0 (includes npm 9.5.1)
+--riavvio visual studio code
+
+
+installazione angular:
+
+da terminale   npm install -g @angular/cli
+
+
+comando versione:
+
+da cmd  npm --version
+da cmd  ng version
+
+creazione prima applicazione:
+
+ng new --nome progetto--
+--routing yes
+--css
+
+
+buildare il progetto:
+
+entrare nel progetto
+
+--ng build
+
+avviare il progetto:
+
+--ng serve
