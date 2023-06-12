@@ -47,3 +47,8 @@ oppure
 ng g c --nome component--
 
 e aggiungere l'import su app.module.ts
+
+-------------------------------------------------------------------
+creazione di una interfaccia
+
+ng generate interface --nome interfaccia---
