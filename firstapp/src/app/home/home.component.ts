@@ -1,6 +1,7 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnChanges, OnInit,inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { User } from '../user';
+import { User, user } from '../user';
+import { ProvaService } from '../services/prova.service';
 
 @Component({
   selector: 'app-home',
@@ -11,10 +12,15 @@ import { User } from '../user';
 })
 export class HomeComponent implements OnInit, OnChanges {
 
-  user: User = {
-    name : "nome",
-    surname : "",
-    operation: ""
+  prova: ProvaService = inject(ProvaService);
+
+  user = new user();
+  
+  /**
+   *
+   */
+  constructor() {
+    this.user = this.prova.getAll();
   }
 
   ngOnInit(): void {

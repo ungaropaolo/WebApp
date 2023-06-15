@@ -3,3 +3,9 @@ export interface User {
     surname: string,
     operation: string
 }
+
+export class user implements User{
+    name = "";
+    surname = "";
+    operation = "";
+}

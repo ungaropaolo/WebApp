@@ -52,3 +52,8 @@ e aggiungere l'import su app.module.ts
 creazione di una interfaccia
 
 ng generate interface --nome interfaccia---
+
+-----------------------------------------------------------------
+creazione di un servizio
+
+ng generate service --nome servizio-- --skip-tests
