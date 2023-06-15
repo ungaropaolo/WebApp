@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { User } from '../user';
 
@@ -9,10 +9,23 @@ import { User } from '../user';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit, OnChanges {
 
   user: User = {
     name : "nome",
-    surname : ""
+    surname : "",
+    operation: ""
+  }
+
+  ngOnInit(): void {
+    console.log("inizializzazione ngOnInit")
+  }
+
+  ngOnChanges(): void{
+
+  }
+
+  ngOnDestroy(): void{
+    console.log("componente Home distrutto ngOnDestroy")
   }
 }
